@@ -44,7 +44,7 @@ function Home() {
 				<div className="container">
 					<h1>{name}</h1>
 					<h2>
-						&lt;{jobTitle} from {location}.&gt;
+						{jobTitle} from {location}.
 					</h2>
 					<h3>({username})</h3>
 				</div>
