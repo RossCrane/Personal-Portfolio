@@ -1,0 +1,24 @@
+.Footer {
+	text-align: right;
+	padding: 10px 20px;
+}
+.Footer .footer-icon {
+	padding: 2px;
+}
+
+.Footer a {
+	text-decoration: none;
+	padding: 0.5rem;
+	color: var(--bright-color);
+}
+
+.Footer i {
+	padding: 0.25rem;
+}
+
+@media (max-width: 440px) {
+	.Footer a {
+		font-size: 0.8rem;
+		padding: 0.25rem;
+	}
+}

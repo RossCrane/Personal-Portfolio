@@ -1,0 +1,88 @@
+/* CONTAINER */
+.Projects {
+	color: var(--bright-color);
+	padding: 5rem;
+}
+
+.Projects h2 {
+	font-size: 3rem;
+	font-family: var(--heading-font-family);
+}
+
+/* INDIVIDUAL PROJECT CONTAINER */
+.Projects .project-item-container {
+	display: flex;
+	overflow: scroll;
+}
+
+.Projects .project-item-container::-webkit-scrollbar {
+	display: none;
+}
+
+.ProjectItem {
+	position: relative;
+	border: 1px solid white;
+	border-radius: 10px;
+	background-color: white;
+	margin: 2rem;
+	min-width: 17rem;
+	box-shadow: 0.6px 2.5px 7px rgba(0, 0, 0, 0.4);
+}
+
+/* IMAGE */
+.ProjectItem .img-container {
+	display: flex;
+	justify-content: center;
+	height: 10rem;
+}
+
+.ProjectItem .app-thumbnail {
+	border-radius: 10px 10px 0 0;
+}
+
+/* BODY */
+.ProjectItem .body-container {
+	padding: 0.75rem;
+	text-align: center;
+}
+
+.ProjectItem h3 {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.ProjectItem p {
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
+}
+
+.ProjectItem .stack {
+	margin-bottom: 2.25rem;
+}
+
+/* BUTTON */
+.ProjectItem button {
+	position: absolute;
+	bottom: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 15px;
+}
+.ProjectItem button > a {
+	text-decoration: none;
+}
+
+@media (max-width: 1083px) {
+	.Projects {
+		padding: 2rem 3rem;
+	}
+	.Projects h2 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.Projects {
+		padding: 2rem 1rem;
+	}
+}

@@ -1,0 +1,20 @@
+export const aboutDetails = {
+	name: 'Ross Crane',
+	username: `ReCursRoss`,
+	jobTitle: 'Software Engineer',
+	location: 'Denver, Colorado',
+	phone: '(561) 232-1328',
+	callTo: `tel:+15612321328`,
+	email: `DylanRossCrane@Gmail.com`,
+	mailTo: `mailto:DylanRossCrane@Gmail.com`,
+	linkedInUrl: 'https://www.linkedin.com/in/dylanrosscrane',
+	linkedInPersonal: `/in/dylanrosscrane`,
+	githubUrl: 'https://github.com/RossCrane',
+	aboutMeText: [
+		`Since launching my cryptocurrency mining venture in 2020, I've developed real-time data visualization tools using JavaScript and Python, demonstrating my ability to harness complex programming for innovative projects. This venture highlights my knack for technology and innovation, showcasing my dedication to pushing the boundaries of programming to create leading-edge solutions.`,
+		`In my role as a Full-Stack Developer at 11th Step Journey, I specialize in JavaScript technologies, including TypeScript, React, and Node.js, to develop intuitive, high-quality websites. My approach is driven by a profound passion for problem-solving and creativity, allowing me to blend these elements into innovative solutions.`,
+		`Currently, I am expanding my technical repertoire by delving into Zig, a low-level programming language. This new venture reflects my dedication to continuous learning and my desire to deepen my understanding of the foundational aspects of coding, further enhancing my ability to tackle complex challenges.`,
+		`I've committed to mastering advanced technologies and persistently exploring new programming frontiers to make a meaningful impact through coding. My continuous learning and adaptation to the latest technological trends ensure I remain at the forefront of the digital era, ready to tackle future challenges.`,
+		`Outside coding, my engagement in computer hardware and DIY projects enriches both my personal and professional life, advocating a holistic approach to well-being. My passion for software development transcends work, embodying a journey of perpetual innovation and growth. I flourish in settings that challenge and foster teamwork, aiming to leave a legacy of innovation and positive transformation.`,
+	],
+};

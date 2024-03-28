@@ -1,0 +1,82 @@
+/* CONTAINER */
+.Contact {
+	margin: 5rem 5rem 1rem 5rem;
+	color: var(--bright-color);
+}
+
+.Contact .contact-block {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(34, 52, 76, 0.8);
+	padding: 2rem;
+	margin: 3rem 13rem;
+	border-radius: 10px;
+	box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.4);
+}
+
+/* HEADER */
+.Contact h2 {
+	font-size: 3rem;
+	font-family: var(--heading-font-family);
+}
+
+.Contact h2,
+h3 {
+	text-align: center;
+}
+/* CONTACT DETAILS */
+.Contact ul {
+	padding: 0;
+}
+
+.Contact li {
+	list-style: none;
+}
+
+.Contact .contact-icon {
+	padding: 20px;
+	font-size: 26px;
+}
+.Contact .contact {
+	font-family: var(--default-font-family);
+	font-size: 26px;
+	text-decoration: none;
+}
+.Contact .contact:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 1083px) {
+	.Contact {
+		margin: 2rem;
+	}
+
+	.Contact .contact-block {
+		padding: 1rem;
+		margin: 2rem 13rem;
+	}
+	.Contact .contact {
+		font-size: 1.25rem;
+	}
+	.Contact .contact-icon {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 870px) {
+	.Contact .contact-block {
+		margin: 2rem -1rem;
+	}
+}
+
+@media (max-width: 430px) {
+	.Contact .contact {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.Contact .contact {
+		font-size: 0.75rem;
+	}
+}
