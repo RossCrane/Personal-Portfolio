@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import '../css/Home.css';
 import { aboutDetails } from '../Util/PersonalizedInfo';
 
-function applyTypewriterEffect(element) {
+function applyTypewriterEffect(element: any) {
 	const text = element.textContent;
 	element.textContent = '';
 	element.style.visibility = 'visible';

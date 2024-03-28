@@ -1,4 +1,3 @@
-import React from 'react';
 import '../css/About.css';
 import fullProfile from '../../public/assets/Dylan-Profile-Correct-Size.jpg';
 import resume from '../../public/assets/Ross-Crane-Resume.pdf';
