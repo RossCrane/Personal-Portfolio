@@ -67,7 +67,7 @@ export const featuredApps = [
 		id: 7,
 		title: 'WOW Counter (Owen Wilson)',
 		body: `This was a one hour challenge to create a counter that counts, this was my take on it.`,
-		stack: 'HTML, CSS and Audio',
+		stack: 'HTML, CSS, JavaScript and Audio',
 		img: owenWilsonCounterImg,
 		alt: 'Owen Wilson Counter app preview',
 		link: 'https://eloquent-treacle-d5885c.netlify.app/',
