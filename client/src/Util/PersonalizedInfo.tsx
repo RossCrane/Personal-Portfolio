@@ -1,6 +1,6 @@
 export const aboutDetails = {
 	name: 'Ross Crane',
-	username: `ReCursRoss`,
+	username: `ReCurseRoss`,
 	jobTitle: 'Software Engineer',
 	location: 'Denver, Colorado',
 	phone: '(561) 232-1328',
