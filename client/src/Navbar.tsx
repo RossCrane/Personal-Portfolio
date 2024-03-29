@@ -19,10 +19,8 @@ function NavBar(props: NavbarProps) {
 	}, [volume, audio]);
 
 	useEffect(() => {
-		// Handle music play/pause based on isMusicPlaying state
 		isMusicPlaying ? audio.play() : audio.pause();
 
-		// Cleanup to pause music when component unmounts
 		return () => {
 			audio.pause();
 		};
