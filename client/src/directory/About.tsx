@@ -2,6 +2,9 @@ import '../css/About.css';
 import fullProfile from '../../public/assets/Dylan-Profile-Correct-Size.jpg';
 import resume from '../../public/assets/Ross-Crane-Resume.pdf';
 import { aboutDetails } from '../Util/PersonalizedInfo';
+import zigIcon from '../../public/assets/Zig-Icon.svg';
+import pythonIcon from '../../public/assets/Python-Icon.svg';
+import typescriptIcon from '../../public/assets/TypeScript-Icon.svg';
 
 function About() {
 	const { linkedInUrl, githubUrl, aboutMeText } = aboutDetails;
@@ -11,6 +14,7 @@ function About() {
 			<div className="about-container">
 				<div className="header-container sm-header">
 					<h2>About Me</h2>
+
 					<div>
 						<a
 							className="header-icon"
@@ -79,7 +83,43 @@ function About() {
 					{aboutMeText.map((paragraph, index) => (
 						<p key={index}>{paragraph}</p>
 					))}
-					<div className="d-flex justify-content-end">
+					<div className="about-section-footer">
+						<div className="icons-container">
+							<a
+								href="https://ziglang.org"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src={zigIcon}
+									alt="zig programming language icon"
+									className="language-icon"
+								/>
+							</a>
+							<a
+								href="https://www.python.org"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src={pythonIcon}
+									alt="python programming language icon"
+									className="language-icon"
+								/>
+							</a>
+							<a
+								href="https://www.typescriptlang.org"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src={typescriptIcon}
+									alt="typescript programming language icon"
+									className="language-icon"
+								/>
+							</a>
+						</div>
+
 						<button
 							className="resume-button btn btn-dark"
 							style={{ backgroundColor: 'var(--button-color)' }}
