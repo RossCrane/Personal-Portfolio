@@ -1,8 +1,9 @@
 import './css/Navbar.css';
 import LogoNoName from '../public/assets/ModifiedLogo.png';
 import { useEffect, useState } from 'react';
+import musicPath from './Util/Rainy-Day-Audio.mp3';
 
-const musicPath = './Rainy-Day-Audio.mp3';
+// const musicPath = './Util/Rainy-Day-Audio.mp3';
 
 type NavbarProps = {
 	changeTheme: () => void;
