@@ -52,3 +52,8 @@
 	border: 1.5px solid var(--dark-font);
 	transition: 3ms ease-in-out;
 }
+
+.Navbar div > ul {
+	display: flex;
+	align-items: center;
+}

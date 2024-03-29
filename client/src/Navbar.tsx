@@ -1,11 +1,37 @@
 import './css/Navbar.css';
 import LogoNoName from '../public/assets/ModifiedLogo.png';
+import { useEffect, useState } from 'react';
+
+const musicPath = '../public/assets/Rainy-Day-Audio.mp3';
 
 type NavbarProps = {
 	changeTheme: () => void;
 };
 
 function NavBar(props: NavbarProps) {
+	const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+	const [volume, setVolume] = useState(0.2);
+	const [audio] = useState(new Audio(musicPath));
+
+	useEffect(() => {
+		audio.volume = volume;
+		audio.loop = true;
+	}, [volume, audio]);
+
+	useEffect(() => {
+		// Handle music play/pause based on isMusicPlaying state
+		isMusicPlaying ? audio.play() : audio.pause();
+
+		// Cleanup to pause music when component unmounts
+		return () => {
+			audio.pause();
+		};
+	}, [isMusicPlaying, audio]);
+
+	const toggleMusic = () => {
+		setIsMusicPlaying(!isMusicPlaying);
+	};
+
 	return (
 		<div className="Navbar">
 			<div className="navigation-section sticky-top">
@@ -71,8 +97,20 @@ function NavBar(props: NavbarProps) {
 							>
 								Dark Mode
 							</li>
+							<li className="nav-item theme-button mx-2" onClick={toggleMusic}>
+								{isMusicPlaying ? 'Stop Music' : 'Play Music'}
+							</li>
 						</ul>
 					</div>
+					<input
+						type="range"
+						min="0"
+						max="1"
+						step="0.01"
+						value={volume}
+						onChange={(e) => setVolume(parseFloat(e.target.value))}
+						style={{ marginRight: '10px' }}
+					/>
 				</nav>
 			</div>
 		</div>
