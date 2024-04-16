@@ -86,13 +86,13 @@ function About() {
 					<div className="about-section-footer">
 						<div className="icons-container">
 							<a
-								href="https://ziglang.org"
+								href="https://www.typescriptlang.org"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								<img
-									src={zigIcon}
-									alt="zig programming language icon"
+									src={typescriptIcon}
+									alt="typescript programming language icon"
 									className="language-icon"
 								/>
 							</a>
@@ -108,18 +108,17 @@ function About() {
 								/>
 							</a>
 							<a
-								href="https://www.typescriptlang.org"
+								href="https://ziglang.org"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								<img
-									src={typescriptIcon}
-									alt="typescript programming language icon"
+									src={zigIcon}
+									alt="zig programming language icon"
 									className="language-icon"
 								/>
 							</a>
 						</div>
-
 						<button
 							className="resume-button btn btn-dark"
 							style={{ backgroundColor: 'var(--button-color)' }}

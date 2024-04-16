@@ -1,17 +1,23 @@
 /* CONTAINER */
 .Contact {
-	margin: 5rem 5rem 1rem 5rem;
-	color: var(--bright-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
 }
 
 .Contact .contact-block {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	background-color: rgba(34, 52, 76, 0.8);
 	padding: 2rem;
-	margin: 3rem 13rem;
+	margin: 3rem auto;
 	border-radius: 10px;
 	box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.4);
+	width: 90%;
 }
 
 /* HEADER */
@@ -44,6 +50,15 @@ h3 {
 }
 .Contact .contact:hover {
 	text-decoration: underline;
+}
+
+.Contact .secret-input {
+	max-width: 350px;
+}
+
+.Contact .secret-button {
+	margin-top: 1rem;
+	padding: 0.375rem 0.75rem;
 }
 
 @media (max-width: 1083px) {

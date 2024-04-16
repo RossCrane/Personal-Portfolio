@@ -48,6 +48,11 @@
 	display: flex;
 }
 
+.About .language-icon:hover {
+	transform: scale(1.5);
+	transition: transform 0.25s ease-in-out;
+}
+
 .About .sm-header {
 	display: none;
 }
