@@ -21,14 +21,18 @@
 }
 
 /* HEADER */
-.Contact h2 {
+.Contact h2,
+.Contact h3 {
 	font-size: 3rem;
 	font-family: var(--heading-font-family);
+	color: var(--header-text-color);
+	transition: color 0.3s ease;
+	text-align: center;
 }
 
-.Contact h2,
-h3 {
-	text-align: center;
+.Contact h2:hover,
+.Contact h3:hover {
+	color: var(--header-text-hover-color);
 }
 /* CONTACT DETAILS */
 .Contact ul {

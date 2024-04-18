@@ -37,19 +37,28 @@ function App() {
 			'--accent-background',
 			accentBackground
 		);
+		document.documentElement.style.setProperty(
+			'--header-text-color',
+			darkMode ? 'white' : 'var(--dark-font)'
+		); // Add this
+		document.documentElement.style.setProperty(
+			'--header-text-hover-color',
+			darkMode ? 'var(--dark-font)' : 'white'
+		); // Add this
+
 		const backgroundColor = document.querySelector('.App');
 		darkMode
 			? backgroundColor?.classList.add('dark-background')
 			: backgroundColor?.classList.remove('dark-background');
 	}, [
 		darkMode,
-		accentBackground,
-		brightFont,
+		homeImg,
+		filterImg,
 		buttonColor,
 		darkFont,
-		filterImg,
-		homeImg,
+		brightFont,
 		primaryBackground,
+		accentBackground,
 	]);
 
 	//TOGGLE DARK THEME
