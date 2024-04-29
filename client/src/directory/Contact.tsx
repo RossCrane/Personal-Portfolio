@@ -20,10 +20,12 @@ function Contact() {
 	const [isTomModalOpen, setTomModalOpen] = useState(false);
 	const [answer, setAnswer] = useState('');
 	const [activeChallenge, setActiveChallenge] = useState('');
+	const [isWelcomeModalOpen, setWelcomeModalOpen] = useState(false);
+	const [personalizedMessage, setPersonalizedMessage] = useState('');
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		const lowerCaseInputValue = inputValue.toLowerCase();
+		const lowerCaseInputValue = inputValue.trim().toLowerCase();
 		switch (lowerCaseInputValue) {
 			case 'alertsecret':
 				alert('You have unlocked the secret!');
@@ -46,6 +48,20 @@ function Contact() {
 			case 'hacker':
 				alert(getBrowserInfo());
 				break;
+			case 'martinien':
+			case 'mr. cho':
+			case 'martinien cho':
+			case 'martin':
+			case 'mechi':
+			case 'marty':
+				const displayName =
+					lowerCaseInputValue.charAt(0).toUpperCase() +
+					lowerCaseInputValue.slice(1);
+				setPersonalizedMessage(
+					`Welcome, ${displayName}! Thank you for taking the time to explore my portfolio. I hope you find the projects and ideas shared here resonate with your innovative vision at Mechi.`
+				);
+				setWelcomeModalOpen(true);
+				break;
 			case 'sam':
 				setSamModalOpen(true);
 				setActiveChallenge('sam');
@@ -63,6 +79,7 @@ function Contact() {
 	const handleModalClose = () => {
 		setSamModalOpen(false);
 		setTomModalOpen(false);
+		setWelcomeModalOpen(false);
 		setAnswer('');
 		setActiveChallenge('');
 	};
@@ -291,6 +308,13 @@ function Contact() {
 				<button className="btn btn-primary" onClick={handleAnswerSubmit}>
 					Submit Answer
 				</button>
+			</Modal>
+			<Modal isOpen={isWelcomeModalOpen} onClose={handleModalClose}>
+				<div>
+					<h3>Special Welcome</h3>
+					<p>{personalizedMessage}</p>
+					<button onClick={handleModalClose}>Close</button>
+				</div>
 			</Modal>
 		</div>
 	);
